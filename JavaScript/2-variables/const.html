@@ -1,0 +1,28 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>const Variable</title>
+</head>
+
+<body>
+    <h1>Javascript</h1>
+    <script>
+        const a = 20;
+        console.log("The Value of a =", a);
+
+        const Fname = "Tayyab";
+        // const cannot updated/redeclare
+        {
+            const Fname = 'jan';
+            console.log("Your Fname is ", Fname);
+        };
+        console.log("Your Fname is ", Fname);
+
+        // The first output will be jan
+        // The second output will bbe Tayyab
+    </script>
+</body>
+
+</html>

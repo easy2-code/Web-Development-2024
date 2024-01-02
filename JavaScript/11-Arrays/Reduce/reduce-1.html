@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reduce method</title>
+</head>
+
+<body>
+    <h1>reduce method.</h1>
+    <p>
+        reduce is an array to a single value.
+    </p>
+    <script>
+        let number = [1, 2, 3, 4, 5];
+        let sum = number.reduce((value1, value2) => {
+            return value1 + value2;
+        });
+        document.write(sum + "</br>");
+    </script>
+    <p>
+        <strong>Step 1:</strong>first it time (1 and 2) and return the addition of both <br>
+        <strong>Sep 2:</strong>then 3 and 4 will be added in the second step. <br>
+        <strong>Step 3:</strong>4 and 5 will be add <br>
+    </p>
+</body>
+
+</html>

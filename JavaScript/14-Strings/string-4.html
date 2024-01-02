@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+
+<body>
+    <h1>String Search</h1>
+    <ul>
+        <li>indexof()</li>
+        <li>lastindexof()</li>
+        <li>search()</li>
+        <li>math()</li>
+        <li>mathAll()</li>
+        <li>includes()</li>
+        <li>startWith()</li>
+        <li>endWith()</li>
+    </ul>
+    <hr>
+    <script>
+        let text = "Please locate where 'locate' occurs!";
+
+        let index = text.indexOf("locate"); //7
+        document.write(index + "</br>");
+
+        //14 starting index of where and search start at position 16
+        let lastIndex = text.lastIndexOf("where", 16);
+        document.write(lastIndex + "</br>");
+
+        let Search = text.search("where");
+        document.write(Search + "</br>");
+
+        let include = text.includes("locate");
+        document.write(include + "</br>");
+
+        let startwith = text.startsWith("Please");
+        let startwith2 = text.startsWith("Please", 5);
+        document.write(startwith + "</br>")
+        document.write(startwith2 + "</br>")
+
+        let endwith = text.endsWith("!");
+        let endwith2 = text.endsWith("!", 11);
+        document.write(endwith + "</br>")
+        document.write(endwith2 + "</br>")
+    </script>
+</body>
+
+</html>

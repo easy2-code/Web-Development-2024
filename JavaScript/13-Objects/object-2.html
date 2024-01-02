@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object in Js</title>
+</head>
+
+<body>
+    <script>
+        const person = {
+            firstName: "Tayyab",
+            lastName: "Khan",
+            id: 123,
+            age: 22,
+            fullName: function() {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+        document.write(person.firstName + "</br>");
+        document.write(person.lastName + "</br>");
+        document.write(person.id + "</br>");
+        document.write(person.age + "</br>");
+        document.write(person.fullName());
+    </script>
+</body>
+
+</html>

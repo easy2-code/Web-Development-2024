@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps</title>
+</head>
+
+<body>
+    <h1>Map()</h1>
+    <br> In JavaScript, the map() function is a higher-order function that is commonly used for transforming elements in an array. </br> It allows you to create a new array by applying a provided function to each element of the original array.
+    </p>
+    <script>
+        const array = [1, 2, 3, 4, 5];
+        document.write("Old array= [" + array + "]</br>");
+        let newArray = array.map((element, index) => {
+            document.write("Index-" + index + "=" + element + "</br>");
+            return element + 1;
+        });
+        document.write("New array= [" + newArray + "]</br></br>");
+
+        const numbers = [1, 2, 3, 4, 5];
+        document.write("Old Array= [" + numbers + "]</br>");
+        // Using map to square each element
+        const squaredNumbers = numbers.map(num => num * num);
+        document.write("New Array= [" + squaredNumbers + "]"); // Output: [1, 4, 9, 16, 25]
+
+        document.write("</br>=======================</br>");
+        const evenArray = [2, 4, 6, 8];
+        document.write("Even Array= [" + evenArray + "]</br>");
+        let squareArray = evenArray.map((element) => {
+            return element * element;
+        });
+        document.write("Square of evenArray= " + squareArray + "</br>");
+        for (let i = 0; i < squareArray.length; i++) {
+            document.write("Index at-" + i + "=" + squareArray[i]);
+            document.write("</br>");
+        }
+    </script>
+</body>
+
+</html>

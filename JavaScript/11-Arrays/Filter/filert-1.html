@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Filter</title>
+</head>
+
+<body>
+    <h1>JavaScript Array</h1>
+    <h2>The filter() method.</h2>
+    <p>Get every element in the array that has a value of 18 or more:</p>
+    <p>
+        filter() work like we want to create a new array from the existent array and in that array <br> those values include for which the filter method true.
+    </p>
+    <script>
+        const age = [20, 10, 40, 30, 50];
+
+        function checkAdult(age) {
+            return age >= 18;
+        }
+        const result = age.filter(checkAdult);
+        document.write("Adult= ", result);
+    </script>
+</body>
+
+</html>

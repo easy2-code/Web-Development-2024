@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <h1>Array using for of loop.</h1>
+    <script>
+        let array = [1, 2, 3, 4, 5];
+        document.write("array= [" + array + "]</br>");
+        document.write("<p>Using <strong>for in</strong> loop to print the values.</p>")
+        document.write("This will print the index of each element.</br>");
+        for (let i in array) {
+            document.write(i);
+            document.write("</br>");
+        }
+        document.write("This will print the values.</br>");
+        for (let i in array) {
+            document.write(array[i]);
+            document.write("</br>");
+        }
+    </script>
+</body>
+
+</html>

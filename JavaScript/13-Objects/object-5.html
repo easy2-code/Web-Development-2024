@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example</title>
+</head>
+
+<body>
+    <p>
+        Write a program to print the property and their value using for loop.
+    </p>
+    <script>
+        // Define an object to store the student's marks
+        var studentMarks = {
+            math: 90,
+            science: 85,
+            english: 88,
+            history: 92,
+            geography: 78
+        };
+
+        // Use a for...in loop to iterate over the properties of the object and print the values
+        for (var subject in studentMarks) {
+            if (studentMarks.hasOwnProperty(subject)) {
+                document.write(subject + ": " + studentMarks[subject]);
+                document.write("</br>");
+            }
+        }
+    </script>
+</body>
+
+</html>

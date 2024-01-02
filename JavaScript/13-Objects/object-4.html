@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example</title>
+</head>
+
+<body>
+    <p>
+        Write a program to print the property and their value using for loop.
+    </p>
+    <script>
+        let car = {
+                Make: "Honda",
+                Model: "Accord",
+                Year: 1998,
+                Color: "White"
+            }
+            // one by one 
+            // document.write("Make: " + car.Make + "</br>");
+            // document.write("Model: " + car.Model + "</br>");
+            // document.write("Year: " + car.Year + "</br>");
+            // document.write("Color: " + car.Color + "</br>");
+            // Using for loop
+        for (let key in car) {
+            document.write(key + ": " + car[key]);
+            document.write("</br>");
+        }
+    </script>
+</body>
+
+</html>

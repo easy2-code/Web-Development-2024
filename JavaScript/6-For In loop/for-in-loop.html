@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For in Loop</title>
+</head>
+
+<body>
+    <h1>For In Loop</h1>
+    <script>
+        const person = {
+            fname: "Tayyab",
+            lname: "Khan",
+            hair: "Black",
+            age: "20"
+        };
+        for (let x in person) {
+            document.write(person[x] + " ");
+        }
+
+        document.write("</br>");
+        document.write("</br>");
+        const number = [1, 2, 3, 4, 5];
+        for (let n in number) {
+            document.write(number[n]);
+        }
+    </script>
+</body>
+
+</html>

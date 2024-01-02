@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+
+<body>
+    <h1>How to find the lowet number in array.</h1>
+    <script>
+        let array = [4, 6, 7, 8, 9, 1, 5, 3, 0];
+        array.sort();
+        document.write("Lowest number is: " + array[0] + "</br>");
+        document.write("===================================</br>");
+
+        const numbers = [5, 2, 8, 1, 7, 3];
+        // Initialize the variable to hold the lowest number
+        let lowestNumber = numbers[0];
+        // Iterate through the array to find the lowest number
+        for (let i = 1; i < numbers.length; i++) {
+            if (numbers[i] < lowestNumber) {
+                lowestNumber = numbers[i];
+            }
+        }
+        document.write('The lowest number is:', lowestNumber + "</br>");
+
+        const number = [5, 2, 8, 1, 7, 3];
+        // Initialize the variable to hold the lowest number
+        let greatestNumber = number[0];
+        // Iterate through the array to find the greatest number
+        for (let i = 1; i < number.length; i++) {
+            if (number[i] > greatestNumber) {
+                greatestNumber = number[i];
+            }
+        }
+        document.write('The greatest number is:', greatestNumber);
+    </script>
+</body>
+
+</html>

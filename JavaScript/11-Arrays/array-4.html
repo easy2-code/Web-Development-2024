@@ -1,0 +1,125 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+
+<body>
+    <h1>Array Methods</h1>
+    <ul>
+        <li>length</li>
+        <li>toString()</li>
+        <li>join()</li>
+        <li>pop()</li>
+        <li>push()</li>
+        <li>shift()</li>
+        <li>unshift()</li>
+        <li>delete</li>
+        <li>concat()</li>
+        <li>flat()</li>
+        <li>splice()</li>
+        <li>slice()</li>
+        <li>sort()</li>
+    </ul>
+    <hr>
+
+    <script>
+        let array = [1, 2, 3, 4, 5];
+        document.write("<h3>Array</h3>")
+        document.write(array + "</br> <hr>");
+
+        // length 
+        document.write("<h3>length</h3>")
+        document.write(array.length + "</br> <hr>");
+
+        // toString() convert array into a string
+        document.write("<h3>toString()</h3>")
+        document.write(array.toString() + "</br> <hr>");
+
+        // join()
+        document.write("<h3>join()</h3>")
+        document.write(array.join("*") + "</br> <hr>");
+
+        // pop() remove the last element from the array and return that value
+        document.write("<h3>pop()</h3>")
+        document.write("Poped value: " + array.pop(4) + "</br>");
+        document.write(array + "</br> <hr>");
+
+        // push()
+        document.write("<h3>push()</h3>")
+        document.write(array + "</br>");
+        document.write(array.push(5) + "</br>")
+        document.write(array + "</br> <hr>")
+
+        // shift() remove first element from array and shift all other elements to a lower index. 
+        document.write("<h3>shift()</h3>");
+        document.write(array + "</br>");
+        document.write("Shifted value: " + array.shift() + "</br>");
+        document.write(array + "</br> <hr>");
+
+        // unshifted() adds a new element to an array (at the beginning), and "unshifts" older elements
+        document.write("<h3>unshift()</h3>");
+        document.write(array + "</br>");
+        document.write("unshifted Value: " + array.unshift(1) + "</br>");
+        document.write(array + "</br> <hr>");
+
+        // delete() 
+        document.write("<h3>delete()</h3>")
+        document.write(array + "<br>");
+        delete array[2];
+        document.write(array + "</br> <hr>")
+
+        // concat() 
+        document.write("<h3>concat()</h3>");
+        const arr1 = ["Cecilie", "Lone"];
+        const arr2 = ["Emil", "Tobias", "Linus"];
+        const arr3 = ["Robin", "Morgan"];
+        const myChildren = arr1.concat(arr2, arr3);
+        document.write(arr1 + "</br>");
+        document.write(arr2 + "</br>");
+        document.write(arr3 + "</br>");
+        document.write(myChildren + "</br> <hr>")
+
+        // splice() can be used to add new items to an array
+        // The first parameter(2) defines the position where new elements should be added(spliced in ).
+        // The second parameter(0) defines how many elements should be removed.
+        document.write("<h3>splice()</h3>");
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.write(fruits + "</br>");
+        fruits.splice(2, 0, "Lemon", "Kiwi");
+        document.write(fruits + "</br> </br>");
+        // The first parameter(0) defines the position where new elements should be added(spliced in ).
+        // The second parameter(1) defines how many elements should be removed.
+        document.write(fruits + "</br>");
+        fruits.splice(0, 1);
+        document.write(fruits + "</br> <hr>");
+
+        // slice() method slices out a piece of an array into a new array.
+        // This example slices out a part of an array starting from array element 1 (BENZ)
+        document.write("<h3>splice()</h3>");
+        const cars = ["BMW", "BENZ", "TOYOTA", "SUZUKI", "HONDA"];
+        document.write(cars + "</br>");
+        const newCars = cars.slice(1);
+        document.write(newCars + "</br><hr>");
+
+        // sort()
+        document.write("<h3>Sort()</h3>");
+        let numbers = [3, 1, 6, 7, 8, 9, 4, 2, 5];
+        document.write("Old Array: " + numbers + "</br>");
+        numbers.sort();
+        document.write("Sorted Array: " + numbers + "</br><hr>");
+
+        // reverse()
+        document.write("<h3>Reverse()</h3>");
+        let number = [3, 1, 6, 7, 8, 9, 4, 2, 5];
+        document.write("Old Array: " + number + "</br>");
+        number.sort();
+        document.write("Sorted Array: " + number + "</br>");
+        number.reverse();
+        document.write("In reverse form: " + number + "</br>");
+    </script>
+</body>
+
+</html>

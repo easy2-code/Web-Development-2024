@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+</head>
+
+<body>
+    <p>
+        Write a program to print the marks of a student in an object using for loop.
+    </p>
+    <script>
+        let marks = {
+            tayyab: 90,
+            usman: 80,
+            luqman: 95
+        };
+        for (let i = 0; i < Object.keys(marks).length; i++) {
+            document.write("The marks of: " + Object.keys(marks)[i] + " are " + marks[Object.keys(marks)[i]]);
+            document.write("</br>");
+        }
+        document.write("=======================================");
+        document.write("</br>");
+    </script>
+</body>
+
+</html>

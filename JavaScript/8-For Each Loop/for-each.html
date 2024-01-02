@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For each Loop</title>
+</head>
+
+<body>
+    <h1>For each</h1>
+    <script>
+        const number = [1, 2, 3, 4, 5];
+        number.forEach(display_numbers);
+
+        function display_numbers(value, index, array) {
+            document.write(value + " </br>");
+        }
+
+        document.write("Modified version of the old array.</br>");
+        let array = [1, 2, 3, 4, 5];
+        array.forEach((Element) => {
+            document.write(Element * Element + "</br>");
+        });
+    </script>
+</body>
+
+</html>
