@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background clip</title>
+    <style>
+        .box {
+            width: 600px;
+            height: 300px;
+            border: 30px dotted greenyellow;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: aqua;
+            /* background-clip: ; */
+            /* by default padding box*/
+            background-clip: content-box;
+            background-clip: border-box;
+            background-clip: padding-box;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>background clip work with background color</h1>
+    <ul>
+        <li>padding-box</li>
+        <li>border-box</li>
+        <li>content-box</li>
+    </ul>
+    <hr>
+    <div class="box">
+        <h1>Hello World</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At beatae odio corrupti voluptatem ad, ut facilis veniam, ratione, quasi laudantium aspernatur obcaecati! Delectus eum minus cumque libero similique molestiae fuga eos amet velit vero necessitatibus
+            eaque iste voluptatem nobis, nam cupiditate sapiente saepe placeat. Iusto, nemo facilis! Minus tempora illo quod explicabo vero perferendis aperiam optio porro dolores saepe? Vitae nam ipsum necessitatibus corporis animi illum quidem culpa
+            at doloribus. Non dolorum exercitationem mollitia, aperiam doloribus sit ex dolores natus explicabo esse, omnis sint incidunt deserunt perspiciatis molestiae obcaecati soluta! Quaerat ipsum delectus ut assumenda voluptates, alias modi cumque
+            natus.
+        </p>
+    </div>
+</body>
+
+</html>

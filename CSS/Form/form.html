@@ -1,0 +1,158 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JS, PYTHON, C++, Web develpoment" />
+    <meta name="keywords" content="Want to learn web develpoment" />
+    <meta name="author" content="tayyab khan" />
+    <link rel="icon" type="image/x-icon" href="icon.png" />
+    <link rel="stylesheet" href="form.css" />
+    <title>table</title>
+</head>
+
+<body>
+    <!-- <input type="text"> start -->
+    <div class="six">
+        <h1>login</h1>
+        <form action="login.php" method="post">
+            <h4>username</h4>
+            <p>
+                <input type="text" name="username" id="username" placeholder="Enter username" />
+            </p>
+            <h4>password</h4>
+            <p>
+                <input type="password" name="passwd" id="password" placeholder="password" />
+            </p>
+            <h4>confirm password</h4>
+            <p>
+                <input type="password" name="confirm-passwd" id="confirm-passwd" placeholder="confirm password" />
+            </p>
+            <button type="submit" id="btn-one">submit</button>
+        </form>
+    </div>
+    <!-- <input type="text"> end -->
+    <!-- <textarea name="" cols="30" rows="10"></textarea> start -->
+    <div class="six">
+        <h2>Address</h2>
+        <form action="address.php" method="post">
+            <p>Enter your address</p>
+            <textarea name="address" cols="30" rows="10"></textarea>
+        </form>
+        <button type="submit" id="btn-one">submit</button>
+    </div>
+    <!-- <textarea name="" cols="30" rows="10"></textarea> end -->
+    <!-- <input type="radio" name="" id=""> start -->
+    <div class="six">
+        <h1>Gender</h1>
+        <form action="gend.php" method="post">
+            <p>Please select your Gender</p>
+            <input type="radio" name="Gender" value="male" checked="checked" />Male
+            <input type="radio" name="Gender" value="male" />Female
+            <button type="submit" id="btn-one">submit</button>
+        </form>
+    </div>
+    <!-- <input type="radio" name="" id=""> ennd -->
+    <!-- <input type="checkbox" name="" id=""> start -->
+    <div class="six">
+        <h1>Language</h1>
+        <form action="lang.php" method="post">
+            <p>Please select your Language</p>
+            <input type="checkbox" name="language" value="Pashto" checked="checked" />Pashto <input type="checkbox" name="language" value="urdu" />Urdu
+            <input type="checkbox" name="language" value="english" />English
+            <button type="submit" id="btn-one">submit</button>
+        </form>
+    </div>
+    <!-- <input type="checkbox" name="" id=""> end -->
+    <!-- drop down list box start -->
+    <div class="six">
+        <h1>Program</h1>
+        <form action="program.php" method="post">
+            <p>Please enter your program</p>
+            <select name="program">
+          <option value="DS">Data Science</option>
+          <option value="SE" selected="selected">Software Engineering</option>
+          <option value="CS">Computer Science</option>
+        </select>
+            <button type="submit" id="btn-one">submit</button>
+        </form>
+    </div>
+    <!-- drop down list box end  -->
+    <!-- multiple drop down box start -->
+    <div class="six">
+        <h1>Select apply for job</h1>
+        <form action="job.php" method="post">
+            <p>Please press control key and select multiple jobs</p>
+            <select name="apply-job" size="3" multiple="multiple">
+          <option value="DS">Data Scientist</option>
+          <option value="WD">Web develpoment</option>
+          <option value="AD">Android develpoment</option>
+          <option value="AD">Android develpoment</option>
+          <option value="AD">Android develpoment</option>
+        </select>
+            <button type="submit" id="btn-one">submit</button>
+        </form>
+    </div>
+    <!-- multiple drop down box end -->
+    <!-- uplaoad file start -->
+    <div class="six">
+        <h1>Upload CV</h1>
+        <form action="cv.php" method="post">
+            <p>Upload your CV</p>
+            <input type="file" name="cv" /> <br /><br />
+            <input type="submit" value="Upload" />
+        </form>
+    </div>
+    <!-- uplaoad file end -->
+    <!-- Submit button start -->
+    <div class="six">
+        <form action="sbmt.php" method="post">
+            <p>Subscribe to our email list</p>
+            <input type="text" name="email" />
+            <input type="submit" name="subscribe" value="Subscribe" />
+            <input type="text" name="email" />
+            <input type="image" src="icon.png" width="70px" height="40px" />
+        </form>
+        <input type="submit" value="Upload" />
+    </div>
+    <!-- Submit button end -->
+    <!-- button and hidden control start -->
+    <div class="six">
+        <form action="btn.php" method="post">
+            <button>
+          <img src="icon.png" alt="add" width="10" height="10" />Add
+          <input type="hidden" name="bookmark" value="lyrics" />
+        </button>
+        </form>
+        <input type="submit" value="Upload" />
+    </div>
+    <!-- button and hidden control end -->
+    <!-- Labelling form controls start  -->
+    <div class="six">
+        <form action="labe.php" method="post">
+            <label>Age: <input type="text" name="age" /></label> Gender:
+            <input type="radio" name="gender" id="female" value="f" />
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="male" value="m" />
+            <label for="male">Male</label>
+        </form>
+        <input type="submit" value="Upload" />
+    </div>
+    <!-- Labelling form controls start  -->
+    <!-- Groupping form elements start -->
+    <div class="six">
+        <form action="groupping.php" method="post">
+            <fieldset>
+                <legend>Contact details</legend>
+                <label>Email: <br /><input type="email" required="required" /> </label
+          ><br />
+          <label>Mobile:<br /><input type="mobile" /></label><br />
+                <label>Telephone: <br /><input type="telephone" /></label><br /><br />
+                <input type="submit" value="submit" />
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

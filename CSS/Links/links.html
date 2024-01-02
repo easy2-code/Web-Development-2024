@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        body {
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .hdr-nav {
+            list-style-type: none;
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            background-color: #333;
+            overflow: hidden;
+            position: fixed;
+            top: 0px;
+        }
+        
+        .hdr-nav li {
+            float: left;
+        }
+        
+        .hdr-nav li a {
+            text-decoration: none;
+            padding: 14px 16px;
+            color: white;
+            display: block;
+        }
+        
+        .green {
+            background-color: #04AA6D;
+        }
+        
+        .hdr-nav li a:hover:not(.green) {
+            background-color: #111;
+        }
+        
+        @media screen and (max-width: 600px) {
+            .hdr-nav li {
+                float: none;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul class="hdr-nav">
+            <li>
+                <a href="https://www.youtube.com/" class="green" target="_blank">Youtube</a>
+            </li>
+            <li>
+                <a href="https://www.google.com/" target="_blank">Google</a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            </li>
+        </ul>
+    </header>
+</body>
+
+</html>

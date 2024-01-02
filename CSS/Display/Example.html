@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example</title>
+    <style>
+      .imgbox {
+        border: 1px solid gray;
+        width: 150px;
+        float: left;
+        text-align: center;
+        margin: 4px;
+        padding: 6px;
+      }
+
+      button {
+        width: 100%;
+      }
+
+      img {
+        width: 150px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Differnnce between display: none; and visibility: hidden;</h1>
+    <p>
+      <strong>visibility: hidden</strong>hides the element but still takeup
+      space in the layout
+    </p>
+    <p>
+      <strong>display: none</strong>remove the element from the layout but does
+      not take up any space.
+    </p>
+    <hr />
+    <div class="imgbox" id="imgbox1">
+      Box 1 <br />
+      <img
+        src="https://cdn.ceoworld.biz/wp-content/uploads/2021/08/Daffy-Duck.jpg"
+        alt="cartoon"
+      />
+      <button onclick="removeElement()">Remove</button>
+    </div>
+
+    <div class="imgbox" id="imgbox2">
+      Box 2 <br />
+      <img
+        src="https://cdn.ceoworld.biz/wp-content/uploads/2021/08/Daffy-Duck.jpg"
+        alt="cartoon"
+      />
+      <button onclick="changeVisibility()">Hide</button>
+    </div>
+
+    <div class="imgbox" id="imgbox3">
+      Box 3 <br />
+      <img
+        src="https://cdn.ceoworld.biz/wp-content/uploads/2021/08/Daffy-Duck.jpg"
+        alt="cartoon"
+      />
+      <button onclick="resetElement()">Reset All</button>
+    </div>
+
+    <script>
+      function removeElement() {
+        document.getElementById("imgbox1").style.display = "none";
+      }
+
+      function changeVisibility() {
+        document.getElementById("imgbox2").style.visibility = "hidden";
+      }
+
+      function resetElement() {
+        document.getElementById("imgbox1").style.display = "block";
+        document.getElementById("imgbox2").style.visibility = "visible";
+      }
+    </script>
+  </body>
+</html>

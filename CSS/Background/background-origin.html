@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background origin</title>
+    <style>
+        body {
+            background: url("https://c4.wallpaperflare.com/wallpaper/297/22/531/lake-blue-moonlight-moon-wallpaper-preview.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+        }
+        
+        .box {
+            width: 600px;
+            height: 300px;
+            border: 30px dotted greenyellow;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 1);
+            background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgN6bX7PLVRuY9RSvLl2roObBtUEbmNPrjQEgSe-HsLIfcszD48NrVGpSmDI0lpdbwWOoN3D9qFf9ifkREmxyhUY0rwcU38ICVUzBCIykzGKvJOkG0wwq456EIXoM_v_n1Q7uVCefmfwsli4n6YknyoPiJZBhOluBmCx_927mT3ruFngx0vTRTXk4ybgg/w640-h360-rw/beeautiful-sunset-illustration-1212023.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* background-origin: ; */
+            /* by default padding box*/
+            background-origin: padding-box;
+            background-origin: content-box;
+            background-origin: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>background origin work with image</h1>
+    <ul>
+        <li>padding-box</li>
+        <li>border-box</li>
+        <li>content-box</li>
+    </ul>
+    <hr>
+    <div class="box">
+        <h1>Hello World</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet inventore, illum minus deserunt expedita earum labore sapiente omnis architecto ipsum, nulla natus quasi quia culpa. Voluptatum voluptatem molestias numquam quo ad hic in laboriosam odio autem,
+            voluptate suscipit molestiae nobis modi nostrum magnam doloribus est quod? Dolore, tempore. Pariatur laboriosam aperiam id magni delectus deserunt recusandae aliquid culpa aliquam itaque maxime consequuntur officia, nesciunt numquam reprehenderit
+            eos nam cupiditate dolor temporibus repudiandae enim, voluptatibus porro omnis corporis. Dolorum suscipit deleniti ea autem amet? Facilis ipsum quas aut accusamus totam ducimus dolorem, accusantium rem itaque fugit! Minima eaque aut est placeat?
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form and input tags</title>
+  <style>
+    form{
+      border: 5px solid black;
+      width: 600px;
+    }
+    div{
+      /* padding: top right bottom left; */
+      padding: 10px 0px 10px 10px;
+    }
+  </style>
+</head>
+<body>
+  <form action="backend.php">
+    <h1>This is Forms</h1>
+    <!-- for and id same to click on Name and enter data -->
+    <!-- name=" " isliyeh jab mn yeh form submit krunga tu backend ko pta chl jy ga k kaha sy data agya -->
+    <!-- type=" " isliyeh keuk user text inter krta hn -->
+
+    <!-- Enter your name here -->
+    <!-- for is used to click and direct enter data -->
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" name="myName" id="name">
+    </div>
+    <!-- Enter your email  -->
+    <div>
+      <label for="email">Email:</label>
+      <input type="text" name="myEmail" id="email">
+    </div>
+    <!-- Enter your phone number  -->
+    <div>
+      <label for="contact">Phone No:</label>
+      <input type="text" name="ContactNo" id="contact">
+    </div>
+    <!-- Enter your date of birth -->
+    <div>
+      <label for="age">Age:</label>
+      <input type="date" name="Age" id="age">
+    </div>
+    <!-- Enter how many bonus you want -->
+    <div>
+      <label for="bonus">Bonus: </label>
+      <input type="number" name="Bonus" id="bonus">
+    </div>
+    <!-- are you eligible for this  -->
+    <div>
+      <label for="eligible">Are you eligible?</label>
+      <input type="checkbox" name="Eligible" id="eligible">
+    </div>
+    <!-- Are you male or female -->
+    <div>
+      <label for="gender">Gender:</label>
+      <!-- name=" " same isliyeh take ak select kre user wrna dono he select hoga pher  -->
+      <!-- checked=" " isliyeh by default other check hoga  -->
+      Male <input type="radio" name="Gender" id="gender">
+      Female <input type="radio" name="Gender" id="gender"> 
+      Other <input type="radio" name="Gender" id="gender" checked="checked"> 
+    </div>
+    <!-- Enter your address  -->
+    <div>
+      <label for="address">Address</label><br>
+      <textarea name="Address" id="address" cols="30" rows="5"></textarea>
+    </div>
+    <!-- select your field  -->
+    <div>
+      <label for="field">Select your Field</label>
+      <!-- for and id same hone chahiyeh or by default El En select hoga  -->
+      <select name="myfield" id="field">
+        <option value="soft">Software Engineering</option>
+        <option value="Elc" selected>Electrical Engineering</option>
+        <option value="Mech">Mechanical Engineering</option>
+      </select>
+    </div>
+    <!-- Submit the form or reset the form  -->
+    <div>
+      <!-- type=" " kuek hm button ban rhe hn and value=" " jo hm display krna chahte hn button pr -->
+      <input type="button" value="Submit">
+      <!-- reset islyeh jb user chahta hn k form ko reset kre  -->
+      <input type="reset" value="Reset">
+    </div>
+  </form>
+</body>
+</html>

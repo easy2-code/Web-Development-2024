@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position: relative;</title>
+    <style>
+      .container {
+        border: 2px solid black;
+        background-color: paleturquoise;
+      }
+      .box {
+        border: 2px solid red;
+        width: 150px;
+        height: 150px;
+        margin: 2px;
+        display: inline-block;
+      }
+      #box1 {
+        /* position: static it is default value and nothing happened; */
+        position: static;
+        background-color: blue;
+      }
+      #box2 {
+        background-color: yellow;
+        /* position: relative to its normal position and will leave a gap at its noraml position; */
+        /* we can use top bottom left right property */
+        position: relative;
+        top: 100px;
+        left: 50px;
+      }
+      #box3 {
+        background-color: purple;
+      }
+      #box4 {
+        background-color: green;
+        position: sticky;
+        top: 3px;
+      }
+      #box5 {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">1</div>
+      <div class="box" id="box2">2-position-relative</div>
+      <div class="box" id="box3">3</div>
+      <div class="box" id="box4">4</div>
+      <div class="box" id="box5">5</div>
+    </div>
+  </body>
+</html>

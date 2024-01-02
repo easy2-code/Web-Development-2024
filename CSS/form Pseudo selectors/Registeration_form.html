@@ -1,0 +1,189 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Form</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        background-color: #eee;
+      }
+      div.main {
+        width: 400px;
+        /* border: 1px solid black; */
+        margin: 40px auto 0px auto;
+      }
+      h2 {
+        text-align: center;
+        padding-top: 30px;
+        font-family: sans-serif;
+      }
+      div.register {
+        width: 100%;
+        font-size: 18px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 2px 2px 15px #aaa;
+      }
+      form.register {
+        margin: 40px;
+      }
+      label {
+        font-size: 18px;
+        font-style: italic;
+        font-family: sans-serif;
+      }
+      input.name {
+        width: 300px;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        outline: 0;
+        padding: 7px;
+        box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.5);
+      }
+      input#submit {
+        width: 200px;
+        padding: 7px;
+        font-size: 16px;
+        font-family: sans-serif;
+        font-weight: bold;
+        border-radius: 3px;
+        background-color: rgba(250, 100, 0, 0.8);
+        color: #fff;
+        cursor: pointer;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+        margin-bottom: 30px;
+      }
+
+      /* Pseudo Selectors */
+      input:focus {
+        /* apply on when user click on input box  */
+        border: 4px solid red;
+      }
+      input:checked + span {
+        /* apply on when user click on checkbox */
+        /* box-shadow: 0 0 0 3px red; */
+        color: red;
+      }
+      /* input[type="radio"]:checked { */
+      /* only apply on radio buttons */
+      /* we can apply on checked box also */
+      /* box-shadow: 0 0 0 3px red; */
+      /* } */
+      /* input[type="radio"]:checked + span { */
+      /* Adjacent selector */
+      /* color: red; */
+      /* } */
+      /* input[type="text"]:disabled { */
+      /* border: 4px solid red; */
+      /* } */
+      /* input[type="text"]:enabled { */
+      /* border: 2px solid red; */
+      /* } */
+      /* input:required { */
+      /* border: 2px solid black; */
+      /* } */
+      /* input:optional { */
+      /* border: 2px solid red; */
+      /* } */
+      /* input:in-range { */
+      /* border: 2px solid blue; */
+      /* } */
+      /* input:out-of-range { */
+      /* border: 2px solid purple; */
+      /* } */
+      input:read-only {
+        border: 2px solid aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="register">
+        <h2>Register Here</h2>
+        <form action="action.php" class="register">
+          <label for="Fname">First Name: </label>
+          <br />
+          <input
+            type="text"
+            name="Fnama"
+            id="Fname"
+            class="name"
+            placeholder="Enter Your First Name"
+            required
+          />
+          <br />
+          <br />
+          <label for="Lname">Last Name:</label>
+          <br />
+          <input
+            type="text"
+            name="Lname"
+            id="Lname"
+            class="name"
+            placeholder="Enter Your Last Name"
+            disabled
+          />
+          <br /><br />
+          <label for="Ftname">Father Name: </label>
+          <br />
+          <input
+            type="text"
+            name="Ftname"
+            id="Ftname"
+            class="name"
+            placeholder="Enter Your Father Name"
+            readonly
+            value="only read"
+          />
+          <br />
+          <br />
+          <label for="age">Age: </label><br />
+          <input
+            type="number"
+            min="18"
+            max="40"
+            class="name"
+            placeholder="Enter Your Age"
+          />
+          <br /><br />
+          <label for="email">Email: </label><br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="name"
+            placeholder="xyz@gmail.com"
+          />
+          <br /><br />
+          <label for="gender">Gender</label><br />
+          &nbsp;&nbsp;&nbsp;
+          <input type="radio" name="gender" id="gender" />
+          <span>Male</span>
+          &nbsp;&nbsp;&nbsp;
+          <input type="radio" name="gender" id="gender" />
+          <span>Female</span>
+          <br /><br />
+          <label for="lang">Language: </label> <br />
+          &nbsp;&nbsp;&nbsp;
+          <input type="checkbox" id="hindi" />
+          &nbsp;
+          <span>Hindi</span>
+          &nbsp;&nbsp;&nbsp;
+          <input type="checkbox" id="English" />
+          <span>English</span>
+          &nbsp;&nbsp;&nbsp;
+          <input type="checkbox" id="Urdu" />
+          <span>Urdu</span>
+          <br /><br />
+          <input type="button" value="Submit" id="submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

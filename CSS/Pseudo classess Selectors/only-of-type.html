@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>first-child</title>
+    <style>
+      .box1,
+      .box2 {
+        border: 2px solid black;
+        width: 500px;
+        padding: 25px 10px;
+      }
+      div.container :only-of-type {
+        /* looking the single element within the parent */
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- four child of container  -->
+      <!-- Childs of container -->
+      <div class="box1">
+        <!-- four child of box1 -->
+        <!-- the color will be red -->
+        <h1>Box 1 Heading</h1>
+        <p>Box 1 Paragraph one</p>
+        <p>Box 2 Paragraph two</p>
+        <p>Box 3 Paragraph three</p>
+        <p>Box 4 Paragraph four</p>
+      </div>
+      <!-- Childs of container -->
+      <p>container Paragraph one</p>
+      <p>container Paragraph two</p>
+      <!-- Childs of container -->
+      <div class="box2">
+        <!-- three child of box2 -->
+        <p>Box 2 paragraph one</p>
+        <p>Box 2 paragraph two</p>
+        <p>Box 2 paragraph three</p>
+      </div>
+    </div>
+  </body>
+</html>

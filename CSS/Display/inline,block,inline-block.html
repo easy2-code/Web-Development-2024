@@ -1,0 +1,74 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display: inline;</title>
+    <style>
+      span.a {
+        border: 1px solid black;
+        background-color: yellow;
+        /* we can not add width height */
+        display: inline;
+        /* width and height does not work yet here */
+        width: 400px;
+        height: 400px;
+        padding: 5px;
+        margin: 100px;
+      }
+      span.b {
+        border: 1px solid black;
+        background-color: yellow;
+        /* when display is block we can set width and height and add a line break */
+        display: block;
+        width: 100px;
+        height: 100px;
+        padding: 5px;
+        margin-top: 5px;
+      }
+      span.c {
+        border: 1px solid black;
+        background-color: yellow;
+        /* to set width and height margin padding but does not give a line break */
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="inline">
+      <h1>display inline property</h1>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem eaque
+      delectus, eveniet officia esse animi asperiores nesciunt perspiciatis
+      nulla illum accusamus tempore temporibus maxime natus quibusdam ipsa
+      exercitationem saepe ad! <span class="a">Tayyab</span>
+      <span class="a">Khan</span> Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Earum architecto sunt ipsum a aliquam, temporibus
+      voluptatum dignissimos saepe eum laudantium corrupti repudiandae
+      consectetur quis nulla itaque quidem vel impedit ratione?
+    </div>
+    <div class="block">
+      <h1>display block property</h1>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis,
+      voluptatum quo quis odit porro nam consequatur dicta omnis harum aliquam
+      incidunt, magnam perferendis molestias optio. Optio nam officiis soluta
+      expedita? <span class="b">Tayyab</span> <span class="b">Khan</span> Lorem
+      ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem
+      expedita, odio soluta magni nemo necessitatibus omnis eaque nisi vitae
+      nobis recusandae est consectetur asperiores labore sapiente excepturi sed,
+      praesentium ducimus.
+    </div>
+    <div class="inline-block">
+      <h1>display inline-block property</h1>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis,
+      voluptatum quo quis odit porro nam consequatur dicta omnis harum aliquam
+      incidunt, magnam perferendis molestias optio. Optio nam officiis soluta
+      expedita? <span class="c">Tayyab</span> <span class="c">Khan</span> Lorem
+      ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem
+      expedita, odio soluta magni nemo necessitatibus omnis eaque nisi vitae
+      nobis recusandae est consectetur asperiores labore sapiente excepturi sed,
+      praesentium ducimus.
+    </div>
+  </body>
+</html>

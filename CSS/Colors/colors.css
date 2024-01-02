@@ -1,0 +1,42 @@
+h1.t {
+    background-color: tomato;
+    color: #ffee65;
+    color: rgb(0, 0, 255);
+    color: rgba(0, 0, 255, 0.2);
+}
+
+h1.o {
+    background-color: orange;
+    color: red;
+    color: rgb(255, 255, 255);
+}
+
+h1.d {
+    background-color: dodgerblue;
+    color: aqua;
+}
+
+h1.m {
+    background-color: mediumaquamarine;
+    color: darkgoldenrod;
+}
+
+h1.g {
+    background-color: gray;
+    color: firebrick;
+}
+
+h1.s {
+    background-color: slateblue;
+    color: gold;
+}
+
+h1.v {
+    background-color: violet;
+    color: indianred;
+}
+
+h1.l {
+    background-color: lightgray;
+    color: darkmagenta;
+}

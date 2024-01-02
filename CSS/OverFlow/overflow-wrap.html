@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow-wrap: ;</title>
+    <style>
+        body 
+        {
+            background-color: wheat;
+        }
+
+        #myDIV 
+        {
+            background-color: lightgray;
+            height:300px;
+        }
+
+        .ex1 
+        {
+            background-color: lightblue;
+            width: 200px;
+            height: 200px;
+            overflow-wrap: normal;
+            overflow-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <h1>The overflow-wrap property</h1>
+    <div id="myDIV">
+        <div class="ex1">
+            This div contains a very long word: thisisaveryveryveryveryveryverylongword. By default, the long
+            word  will 
+            not break and wrap to the next line
+        </div>
+    </div>
+</body>
+</html>
