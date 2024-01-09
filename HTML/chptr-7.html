@@ -1,166 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Tayyab Khan">
-    <meta name="description" content="Welcome to easy2code">
-    <meta name="keywords" content="HTML, CSS, Java">
-    <meta name="robots" content="INDEX, FOLLOW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Tayyab Khan" />
+    <meta name="description" content="Welcome to easy2code" />
+    <meta name="keywords" content="HTML, CSS, Java" />
+    <meta name="robots" content="INDEX, FOLLOW" />
     <title>chapter 7</title>
     <style>
-        .chptr {
-            background-color: gray;
-            border: 5px solid black;
-            width: 600px;
-        }
+      .chptr {
+        background-color: gray;
+        border: 5px solid black;
+        width: 600px;
+      }
 
-        form.one {
-            padding: 20px;
-            border: 1px solid black;
-            width: 50%;
-            background-color: lightslategray;
-        }
-        
-        form.two {
-            margin-top: 10px;
-            padding: 20px;
-            border: 1px solid black;
-            width: 50%;
-            background-color: lightgray;
-        }
-        
-        form.three {
-            margin-top: 10px;
-            padding: 20px;
-            border: 1px solid black;
-            width: 50%;
-            background-color: lightslategray;
-        }
-        
-        form.three fieldset legend {
-            text-align: center;
-        }
+      form.one {
+        padding: 20px;
+        border: 1px solid black;
+        width: 50%;
+        background-color: lightslategray;
+      }
+
+      form.two {
+        margin-top: 10px;
+        padding: 20px;
+        border: 1px solid black;
+        width: 50%;
+        background-color: lightgray;
+      }
+
+      form.three {
+        margin-top: 10px;
+        padding: 20px;
+        border: 1px solid black;
+        width: 50%;
+        background-color: lightslategray;
+      }
+
+      form.three fieldset legend {
+        text-align: center;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>Chapter 7</h1>
     <div class="chptr">
-        <h1>Tags used in chapter 6</h1>
-        <ul>
-            <li>input:text</li>
-            <li>input:password</li>
-            <li>input:email</li>
-            <li>textarea</li>
-            <li>input:radio</li>
-            <li>input:checkbox</li>
-            <li>select</li>
-            <li>option</li>
-            <li>input:file</li>
-            <li>input:submit</li>
-            <li>lable</li>
-            <li>fieldset</li>
-            <li>legend</li>
-        </ul>
+      <h1>Tags used in chapter 6</h1>
+      <ul>
+        <li>input:text</li>
+        <li>input:password</li>
+        <li>input:email</li>
+        <li>textarea</li>
+        <li>input:radio</li>
+        <li>input:checkbox</li>
+        <li>select</li>
+        <li>option</li>
+        <li>input:file</li>
+        <li>input:submit</li>
+        <li>lable</li>
+        <li>fieldset</li>
+        <li>legend</li>
+      </ul>
     </div>
-    <hr>
+    <hr />
 
     <form action="login.php" method="post" class="one">
-        <p>Username: <input type="text" name="username" id="usrname" size="25" maxlength="10" placeholder="enter your name"></p>
-        <p>Password: <input type="text" name="password" id="passwd" size="25" maxlength="12" placeholder="enter your password"></p>
-        <p>Email: <input type="email" name="email" id="email" placeholder="example@gmail.com"></p>
-        <p>Address:</p>
-        <textarea name="address" id="addrss" cols="40" rows="5" placeholder="enter address here"></textarea>
-        <p>Gender:
-            <input type="radio" name="Gender" id="gender" value="male" checked="checked">Male
-            <input type="radio" name="Gender" id="gender" value="female">Female
-        </p>
-        <p>Language:
-            <input type="checkbox" name="language" id="lng" value="english" checked="checked">English
-            <input type="checkbox" name="language" id="lng" value="urdu">Urdu
-            <input type="checkbox" name="language" id="lng" value="german">German
-        </p>
-        <p>
-            Program:
-            <select name="Department" id="dep">
-                    <option value="computer">computer sciences</option>
-                    <option value="Software" selected="selected">Software engineering</option>
-                    <option value="data">Data sciences</option>
-                </select>
-        </p>
-        <p>Upload Photo:
-            <input type="file" name="photo" id="photo">
-        </p>
-        <p>Submit:
-            <input type="submit" value="upload">
-        </p>
+      <p>
+        Username:
+        <input
+          type="text"
+          name="username"
+          id="usrname"
+          size="25"
+          maxlength="10"
+          placeholder="enter your name"
+        />
+      </p>
+      <p>
+        Password:
+        <input
+          type="text"
+          name="password"
+          id="passwd"
+          size="25"
+          maxlength="12"
+          placeholder="enter your password"
+        />
+      </p>
+      <p>
+        Email:
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="example@gmail.com"
+        />
+      </p>
+      <p>Address:</p>
+      <textarea
+        name="address"
+        id="addrss"
+        cols="40"
+        rows="5"
+        placeholder="enter address here"
+      ></textarea>
+      <p>
+        Gender:
+        <input
+          type="radio"
+          name="Gender"
+          id="gender"
+          value="male"
+          checked="checked"
+        />Male
+        <input type="radio" name="Gender" id="gender" value="female" />Female
+      </p>
+      <p>
+        Language:
+        <input
+          type="checkbox"
+          name="language"
+          id="lng"
+          value="english"
+          checked="checked"
+        />English
+        <input type="checkbox" name="language" id="lng" value="urdu" />Urdu
+        <input type="checkbox" name="language" id="lng" value="german" />German
+      </p>
+      <p>
+        Program:
+        <select name="Department" id="dep">
+          <option value="computer">computer sciences</option>
+          <option value="Software" selected="selected">
+            Software engineering
+          </option>
+          <option value="data">Data sciences</option>
+        </select>
+      </p>
+      <p>
+        Upload Photo:
+        <input type="file" name="photo" id="photo" />
+      </p>
+      <p>
+        Submit:
+        <input type="submit" value="upload" />
+      </p>
     </form>
 
     <form action="two.php" method="post" class="two">
-        <label for="age">
-            Age:
-            <input type="text" name="Age" id="age">
-        </label>
-        <label for="passwd">
-            Password:
-            <input type="password" name="Password" id="passwd">
-        </label><br><br>
-        <label for="email">
-            Email:
-            <input type="email" name="Email" id="email">
-        </label>
-        <p>
-            Gender:
-            <input type="radio" name="Gender" id="gender">
-            <label for="male">Male</label>
-            <input type="radio" name="Gender" id="gender">
-            <label for="female">Female</label>
-        </p>
-        <p>
-            <input type="submit" value="Submit">
-        </p>
+      <label for="age">
+        Age:
+        <input type="text" name="Age" id="age" />
+      </label>
+      <label for="passwd">
+        Password:
+        <input type="password" name="Password" id="passwd" /> </label
+      ><br /><br />
+      <label for="email">
+        Email:
+        <input type="email" name="Email" id="email" />
+      </label>
+      <p>
+        Gender:
+        <input type="radio" name="Gender" id="gender" />
+        <label for="male">Male</label>
+        <input type="radio" name="Gender" id="gender" />
+        <label for="female">Female</label>
+      </p>
+      <p>
+        <input type="submit" value="Submit" />
+      </p>
     </form>
 
     <form action="three.php" method="post" class="three">
-        <fieldset>
-            <legend>Contact Details</legend>
-            <!-- email label start  -->
-            <label for="email">Email: <br>
-                <input type="email" name="Email" id="email" required="required">
-            </label><br>
-            <!-- email label end  -->
-            <!-- mobile label start  -->
-            <label for="mobile">Mobile: <br>
-                <input type="text" name="Mobile id="mobile" required="required">
-            </label><br>
-            <!-- mobile label end  -->
-            <!-- telephone label start  -->
-            <label for="telephone">Telephone: <br>
-                <input type="text" name="Telephone" id="telephone" required="required">
-            </label><br>
-            <!-- telephone label end  -->
-            <!-- date label start  -->
-            <label for="date">Date of Birth: <br>
-            <input type="date" name="DOB" id="date">
-            </label><br>
-            <!-- date label end  -->
-            <!-- website url label start  -->
-            <label for="url">Website URL: <br>
-                <input type="url" name="Website" id="url">
-            </label><br>
-            <!-- search label start  -->
-            <label for="search">Search: <br>
-                <input type="search" name="Search" id="search" placeholder="Search here">
-                <input type="submit" value="search">
-            </label>
-            <!-- website url label end  -->
-            <p>
-                <input type="submit" value="Submit">
-            </p>
-        </fieldset>
+      <fieldset>
+        <legend>Contact Details</legend>
+        <!-- email label start  -->
+        <label for="email"
+          >Email: <br />
+          <input
+            type="email"
+            name="Email"
+            id="email"
+            required="required"
+          /> </label
+        ><br />
+        <!-- email label end  -->
+        <!-- mobile label start  -->
+        <label for="mobile"
+          >Mobile: <br />
+          <input type="text" name="Mobile id="mobile" required="required"> </label
+        ><br />
+        <!-- mobile label end  -->
+        <!-- telephone label start  -->
+        <label for="telephone"
+          >Telephone: <br />
+          <input
+            type="text"
+            name="Telephone"
+            id="telephone"
+            required="required"
+          /> </label
+        ><br />
+        <!-- telephone label end  -->
+        <!-- date label start  -->
+        <label for="date"
+          >Date of Birth: <br />
+          <input type="date" name="DOB" id="date" /> </label
+        ><br />
+        <!-- date label end  -->
+        <!-- website url label start  -->
+        <label for="url"
+          >Website URL: <br />
+          <input type="url" name="Website" id="url" /> </label
+        ><br />
+        <!-- search label start  -->
+        <label for="search"
+          >Search: <br />
+          <input
+            type="search"
+            name="Search"
+            id="search"
+            placeholder="Search here"
+          />
+          <input type="submit" value="search" />
+        </label>
+        <!-- website url label end  -->
+        <p>
+          <input type="submit" value="Submit" />
+        </p>
+      </fieldset>
     </form>
-</body>
-
+  </body>
 </html>
