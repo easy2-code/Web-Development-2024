@@ -1,48 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>list-style-position</title>
     <style>
-        ul.outside {
-            border: 1px solid black;
-            width: 200px;
-            list-style-type: circle;
-            /* list-style-position: outside; */
-            list-style-position: outside;
-        }
-        
-        ul.inside {
-            border: 1px solid black;
-            width: 200px;
-            list-style-type: circle;
-            /* list-style-position: outside; */
-            list-style-position: inside;
-        }
-    </style>
-</head>
+      ul.outside {
+        border: 1px solid black;
+        width: 200px;
+        list-style-type: circle;
+        /* list-style-position: inside; */
+        list-style-position: outside;
+      }
 
-<body>
+      ul.inside {
+        border: 1px solid black;
+        width: 200px;
+        list-style-type: circle;
+        /* list-style-position: outside; */
+        list-style-position: inside;
+      }
+    </style>
+  </head>
+
+  <body>
     <h1>list-style-position</h1>
 
     <h4>list-style-position: outside;</h4>
     <ul class="outside">
-        <li>Heading</li>
-        <li>Heading</li>
-        <li>Heading</li>
-        <li>Heading</li>
+      <li>Heading</li>
+      <li>Heading</li>
+      <li>Heading</li>
+      <li>Heading</li>
     </ul>
     <hr />
     <h4>list-style-position: inside;</h4>
     <ul class="inside">
-        <li>Heading</li>
-        <li>Heading</li>
-        <li>Heading</li>
-        <li>Heading</li>
+      <li>Heading</li>
+      <li>Heading</li>
+      <li>Heading</li>
+      <li>Heading</li>
     </ul>
-</body>
-
+  </body>
 </html>
