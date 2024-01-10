@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <h1>📘 The Code Magazine</h1>
       <nav>
         <a href="">Blog</a>
@@ -15,8 +15,8 @@
         <a href="">Flexbox</a>
         <a href="">CSS Grid</a>
       </nav>
-      <p>Test Paragraph</p>
     </header>
+
     <article>
       <header>
         <h2>The Basic Language of the Web: HTML</h2>
@@ -55,7 +55,7 @@
       </p>
       <p>In HTML, each element is made up of 3 parts:</p>
       <ol>
-        <li>The opening tag</li>
+        <li class="first-li">The opening tag</li>
         <li>The closing tag</li>
         <li>The actual element</li>
       </ol>
@@ -73,7 +73,9 @@
         web. Here are 5 of them:
       </p>
       <ul>
-        <li>To be able to use the fundamental web dev language</li>
+        <li class="first-li">
+          To be able to use the fundamental web dev language
+        </li>
         <li>
           To hand-craft beautiful websites instead of relying on tools like
           Wordpress or Wix
@@ -84,10 +86,11 @@
       </ul>
       <p>Hopefully you learned something new here. See you next time!</p>
     </article>
+
     <aside>
       <h4>Related posts</h4>
-      <ul>
-        <li class="no-bullets">
+      <ul class="no-bullets">
+        <li>
           <img
             src="img/related-1.jpg"
             alt="person programming"
@@ -97,12 +100,12 @@
           <a href="#">How to learn web development</a>
           <p class="related-author">By Jonas Schmedtmann</p>
         </li>
-        <li class="no-bullets">
+        <li>
           <img src="img/related-2.jpg" alt="Lightning" width="75" height="75" />
           <a href="#">The unknown power of css</a>
           <p class="related-author">By Jim Dillon</p>
         </li>
-        <li class="no-bullets">
+        <li>
           <img
             src="img/related-3.jpg"
             alt="JavaScript Code on a screen"
@@ -114,6 +117,7 @@
         </li>
       </ul>
     </aside>
+
     <footer>
       <p id="copyRight">Copyright &copy; 2027 by The Code Magazine.</p>
     </footer>

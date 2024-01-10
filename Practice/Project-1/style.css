@@ -7,6 +7,13 @@ h4,
 p,
 li {
   font-family: sans-serif;
+  color: #444444;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
 }
 
 h1 {
@@ -63,3 +70,59 @@ article header p {
 .no-bullets {
   list-style-type: none;
 }
+
+.main-header {
+  background-color: #f7f7f7;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+
+/* .first-li {
+  font-weight: bold;
+} */
+/* But we can do better than that by Pseudo class */
+li:first-child {
+  font-weight: bold;
+}
+li:last-child {
+  font-style: italic;
+}
+/* li:nth-child(odd) {
+  color: red;
+} */
+/* li:nth-child(2) {
+  color: red;
+} */
+
+/* article p:last-child {
+  color: red;
+} */
+
+/* styling links */
+/* Target all ancher tags which have href attribute */
+a:link {
+  color: #1098ad;
+  text-decoration-line: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration-line: underline;
+  text-decoration-color: orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+/* LVHA */
