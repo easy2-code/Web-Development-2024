@@ -1,6 +1,11 @@
+body {
+  color: #444;
+  font-family: sans-serif;
+}
+
 /* Combine Selectors  */
 /* List Selectors */
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -8,7 +13,7 @@ p,
 li {
   font-family: sans-serif;
   color: #444444;
-}
+} */
 
 h1,
 h2,
