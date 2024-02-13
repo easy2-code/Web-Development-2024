@@ -126,3 +126,17 @@ a:active {
 }
 
 /* LVHA */
+
+/* Resolving conflicting */
+/* #copyRight {
+  color: red;
+}
+.copyRight {
+  color: blue;
+}
+.text {
+  color: yellow;
+}
+footer p {
+  color: green !important;
+} */
