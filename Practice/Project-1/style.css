@@ -8,9 +8,25 @@ body {
   border-top: 10px solid #1098ad;
 }
 
+.container {
+  width: 800px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+
 .main-header {
   background-color: #f7f7f7;
   padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+
+nav {
+  font-size: 18px;
+}
+
+article {
   margin-bottom: 60px;
 }
 
@@ -18,9 +34,6 @@ body {
   margin-bottom: 40px;
 }
 
-article {
-  margin-bottom: 60px;
-}
 /* Combine Selectors  */
 /* List Selectors */
 /* h1,
@@ -31,110 +44,6 @@ p,
 li {
   font-family: sans-serif;
   color: #444444;
-} */
-
-h1,
-h2,
-h3 {
-  color: #1098ad;
-}
-
-h1 {
-  font-size: 26px;
-  text-transform: uppercase;
-  font-style: italic;
-}
-
-h2 {
-  font-size: 40px;
-  margin-bottom: 30px;
-}
-
-h3 {
-  font-size: 30px;
-  margin-bottom: 20px;
-  margin-top: 40px;
-}
-
-h4 {
-  font-size: 20px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-p {
-  font-size: 22px;
-  line-height: 1.5;
-  margin-bottom: 15px;
-}
-
-ul,
-ol {
-  margin-left: 50px;
-  margin-bottom: 20px;
-}
-li {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-li:last-child {
-  margin-bottom: 0;
-}
-
-/* 
-article header p {
-  font-style: italic;
-} */
-/* instead of article header p we just write the id of that element */
-/* and id is author */
-#author {
-  font-style: italic;
-}
-
-/* footer p {
-  font-size: 16px;
-} */
-#copyRight {
-  font-size: 16px;
-}
-
-.related-author {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.no-bullets {
-  list-style-type: none;
-}
-
-aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
-  /* padding-top: 50px;
-  padding-bottom: 50px; */
-  padding: 30px 0;
-}
-
-/* .first-li {
-  font-weight: bold;
-} */
-/* But we can do better than that by Pseudo class */
-li:first-child {
-  font-weight: bold;
-}
-li:last-child {
-  font-style: italic;
-}
-/* li:nth-child(odd) {
-  color: red;
-} */
-/* li:nth-child(2) {
-  color: red;
-} */
-
-/* article p:last-child {
-  color: red;
 } */
 
 /* styling links */
@@ -158,6 +67,115 @@ a:hover {
 a:active {
   background-color: black;
   font-style: italic;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+/* 
+article header p {
+  font-style: italic;
+} */
+/* instead of article header p we just write the id of that element */
+/* and id is author */
+#author {
+  font-style: italic;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+li:last-child {
+  margin-bottom: 0;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+  padding: 30px 0;
+  width: 500px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.no-bullets {
+  list-style-type: none;
+}
+
+/* .first-li {
+  font-weight: bold;
+} */
+/* But we can do better than that by Pseudo class */
+li:first-child {
+  font-weight: bold;
+}
+li:last-child {
+  font-style: italic;
+}
+/* li:nth-child(odd) {
+  color: red;
+} */
+/* li:nth-child(2) {
+  color: red;
+} */
+
+/* article p:last-child {
+  color: red;
+} */
+
+/* footer p {
+  font-size: 16px;
+} */
+#copyRight {
+  font-size: 16px;
 }
 
 /* LVHA */
