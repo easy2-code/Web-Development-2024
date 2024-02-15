@@ -26,6 +26,12 @@ nav {
   font-size: 18px;
 }
 
+nav a:link {
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
 article {
   margin-bottom: 60px;
 }
@@ -193,3 +199,9 @@ li:last-child {
 footer p {
   color: green !important;
 } */
+
+.like-btn {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+}
