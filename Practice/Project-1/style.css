@@ -6,7 +6,6 @@ body {
   color: #444;
   font-family: sans-serif;
   border-top: 10px solid #1098ad;
-  position: relative;
 }
 
 .container {
@@ -39,6 +38,7 @@ article {
 
 .post-header {
   margin-bottom: 40px;
+  position: relative;
 }
 
 /* Combine Selectors  */
