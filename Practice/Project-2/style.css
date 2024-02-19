@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #444;
+  font-family: sans-serif;
+  border-top: 10px solid #1098ad;
+  position: relative;
+}
+
+.container {
+  width: 1200px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+}
+
+nav {
+  font-size: 18px;
+}
+
+nav a:link {
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+/* Combine Selectors  */
+/* List Selectors */
+/* h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+  color: #444444;
+} */
+
+/* styling links */
+/* Target all ancher tags which have href attribute */
+a:link {
+  color: #1098ad;
+  text-decoration-line: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration-line: underline;
+  text-decoration-color: orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+/* 
+article header p {
+  font-style: italic;
+} */
+/* instead of article header p we just write the id of that element */
+/* and id is author */
+#author {
+  font-style: italic;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+li:last-child {
+  margin-bottom: 0;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+  padding: 30px 0;
+  width: 500px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.no-bullets {
+  list-style-type: none;
+}
+
+/* .first-li {
+  font-weight: bold;
+} */
+/* But we can do better than that by Pseudo class */
+li:first-child {
+  font-weight: bold;
+}
+li:last-child {
+  font-style: italic;
+}
+/* li:nth-child(odd) {
+  color: red;
+} */
+/* li:nth-child(2) {
+  color: red;
+} */
+
+/* article p:last-child {
+  color: red;
+} */
+
+/* footer p {
+  font-size: 16px;
+} */
+#copyRight {
+  font-size: 16px;
+}
+
+/* LVHA */
+
+/* Resolving conflicting */
+/* #copyRight {
+  color: red;
+}
+.copyRight {
+  color: blue;
+}
+.text {
+  color: yellow;
+}
+footer p {
+  color: green !important;
+} */
+
+.like-btn {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+/* Pseudo Elements */
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h3 + p::first-line {
+  color: red;
+  font-size: 40px;
+}
+h2 {
+  position: relative;
+}
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  color: #444;
+  font-size: 16px;
+  font-weight: bold;
+  /* by default pseudo elements are inline. We can't apply padding */
+  display: inline-block;
+  padding: 5px 5px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}
+
+/* Floats */
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+.author {
+  margin-top: 10px;
+  margin-left: 20px;
+  float: left;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
