@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   color: #444;
@@ -119,6 +120,7 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
 }
 ul,
 ol {
@@ -137,10 +139,7 @@ aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  /* padding-top: 50px;
-  padding-bottom: 50px; */
-  padding: 30px 0;
-  width: 500px;
+  padding: 30px 40px;
 }
 
 .related-author {
@@ -150,6 +149,7 @@ aside {
 
 .no-bullets {
   list-style-type: none;
+  margin-left: 0px;
 }
 
 /* .first-li {
