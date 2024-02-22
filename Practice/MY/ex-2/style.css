@@ -12,7 +12,6 @@ body {
 }
 
 .container {
-  border: 1px solid black;
   width: 800px;
   /* center  */
   margin: 0 auto;
@@ -26,10 +25,15 @@ body {
 }
 
 h1 {
-  font-size: 40px;
-  margin-bottom: 30px;
+  font-size: 26px;
   font-style: italic;
   color: #1098ad;
+  text-transform: uppercase;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
 }
 
 .nav-bar {
@@ -37,19 +41,9 @@ h1 {
 }
 
 .nav-bar a:link {
-  display: inline-block;
   margin-right: 30px;
   margin-top: 10px;
-}
-
-article {
-  border: 3px solid yellow;
-  margin-bottom: 60px;
-}
-
-.post-header {
-  border: 4px solid green;
-  margin-bottom: 40px;
+  display: inline-block;
 }
 
 a:link {
@@ -73,22 +67,27 @@ a:active {
   font-style: italic;
 }
 
+article {
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
 h2 {
   color: #1098ad;
+  font-size: 40px;
+  margin-bottom: 30px;
 }
 
-.author-img {
-  height: 50px;
-  width: 50px;
-}
-
-#author {
+#author-posted {
   font-style: italic;
 }
 
 .post-img {
-  height: 200px;
-  width: 500px;
+  width: 100%;
+  height: auto;
 }
 
 .like-btn {
@@ -98,4 +97,17 @@ h2 {
   position: absolute;
   bottom: 50;
   right: 50;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+h3 {
+  color: #1098ad;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
 }
