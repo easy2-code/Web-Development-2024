@@ -53,3 +53,15 @@ a:active {
   background-color: #000;
   font-style: italic;
 }
+
+h1 {
+  color: #1098ad;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
