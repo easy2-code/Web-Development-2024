@@ -7,40 +7,27 @@ body {
   color: #444;
   font-family: sans-serif;
   border-top: 10px solid #1098ad;
-  /* button position  */
-  position: relative;
 }
 
 .container {
   width: 800px;
-  /* center  */
   margin: 0 auto;
+  border: 1px solid black;
 }
 
 .main-header {
-  background-color: #d0d0d0;
-  height: 80px;
+  border: 2px solid greenyellow;
+  background-color: #9999;
   padding: 20px 40px;
   margin-bottom: 60px;
+  height: 80px;
 }
 
-h1 {
-  font-size: 26px;
-  font-style: italic;
-  color: #1098ad;
-  text-transform: uppercase;
-}
-
-h1::first-letter {
-  font-style: normal;
-  margin-right: 5px;
-}
-
-.nav-bar {
+nav {
   font-size: 18px;
 }
 
-.nav-bar a:link {
+nav a:link {
   margin-right: 30px;
   margin-top: 10px;
   display: inline-block;
@@ -65,49 +52,4 @@ a:hover {
 a:active {
   background-color: #000;
   font-style: italic;
-}
-
-article {
-  margin-bottom: 60px;
-}
-
-.post-header {
-  margin-bottom: 40px;
-}
-
-h2 {
-  color: #1098ad;
-  font-size: 40px;
-  margin-bottom: 30px;
-}
-
-#author-posted {
-  font-style: italic;
-}
-
-.post-img {
-  width: 100%;
-  height: auto;
-}
-
-.like-btn {
-  font-size: 22px;
-  padding: 20px;
-  cursor: pointer;
-  position: absolute;
-  bottom: 50;
-  right: 50;
-}
-
-p {
-  font-size: 22px;
-  line-height: 1.5;
-  margin-bottom: 15px;
-}
-
-h3 {
-  color: #1098ad;
-  font-size: 20px;
-  text-transform: uppercase;
-  text-align: center;
 }
