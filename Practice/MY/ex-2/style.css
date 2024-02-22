@@ -14,11 +14,11 @@ body {
 .container {
   width: 800px;
   margin: 0 auto;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .main-header {
-  border: 2px solid greenyellow;
+  /* border: 2px solid greenyellow; */
   background-color: #9999;
   padding: 20px 40px;
   margin-bottom: 60px;
@@ -104,4 +104,62 @@ article {
 
 .post-header {
   margin-bottom: 40px;
+}
+
+h3 {
+  color: #1098ad;
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+h3 + p::first-line {
+  color: red;
+  font-size: 40px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+li:last-child {
+  margin-bottom: 0px;
+  font-style: italic;
+}
+
+aside {
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  background-color: #f7f7f7;
+  padding: 30px 0px;
+  width: 500px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.no-bullets {
+  list-style-type: none;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#copyRight {
+  font-size: 16px;
 }
