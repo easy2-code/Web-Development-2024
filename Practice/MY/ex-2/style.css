@@ -81,6 +81,11 @@ h2 {
   margin-bottom: 30px;
 }
 
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
 p {
   font-size: 22px;
   line-height: 1.5;
@@ -89,6 +94,12 @@ p {
 
 #author {
   font-style: italic;
+}
+
+.author {
+  margin-top: 10px;
+  margin-left: 20px;
+  float: left;
 }
 
 .like-btn {
@@ -106,7 +117,8 @@ p {
 }
 
 article {
-  margin-bottom: 60px;
+  width: 825px;
+  float: left;
 }
 
 .post-header {
@@ -149,7 +161,9 @@ aside {
   border-bottom: 5px solid #1098ad;
   background-color: #f7f7f7;
   padding: 30px 0px;
-  width: 500px;
+  /* width: 500px; */
+  width: 300px;
+  float: right;
 }
 
 h4 {
@@ -171,27 +185,6 @@ h4 {
   font-size: 16px;
 }
 
-article {
-  width: 825px;
-  float: left;
-}
-
-aside {
-  width: 300px;
-  float: right;
-}
-
 footer {
   clear: both;
-}
-
-.author-img {
-  float: left;
-  margin-bottom: 20px;
-}
-
-.author {
-  margin-top: 10px;
-  margin-left: 20px;
-  float: left;
 }
