@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 1200px;
   margin: 0 auto;
   /* border: 1px solid black; */
 }
@@ -22,11 +23,16 @@ body {
   background-color: #9999;
   padding: 20px 40px;
   margin-bottom: 60px;
-  height: 80px;
 }
 
+.clear-fix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
 nav {
   font-size: 18px;
+  float: right;
 }
 
 nav a:link {
@@ -61,6 +67,7 @@ h1 {
   font-size: 26px;
   text-transform: uppercase;
   font-style: italic;
+  float: left;
 }
 
 h1::first-letter {
@@ -162,4 +169,29 @@ h4 {
 
 #copyRight {
   font-size: 16px;
+}
+
+article {
+  width: 825px;
+  float: left;
+}
+
+aside {
+  width: 300px;
+  float: right;
+}
+
+footer {
+  clear: both;
+}
+
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author {
+  margin-top: 10px;
+  margin-left: 20px;
+  float: left;
 }
