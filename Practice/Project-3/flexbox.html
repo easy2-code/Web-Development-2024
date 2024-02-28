@@ -49,6 +49,43 @@
         /* justify-content: space-around; */
         display: flex;
         align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+      }
+
+      /* manually spacing between  */
+      /* .el {
+        margin-right: 40px;
+      } */
+      /* instead of this we use a property gap */
+
+      .el {
+        /* Default values */
+        /* flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto; */
+        /* flex-basis: 200px; */
+        /* whether flexbox is allow to shrink elements if necessary or not.  */
+        /* flex-shrink: 0; */
+        /* flex: 0 0 200px; */
+        /* opposite of that which determent whether element allow to grow as large as they can or not */
+        /* flex-grow: 1; */
+
+        /* flex is the shorthand of the three */
+        flex: 1;
+      }
+      .el--1 {
+        align-self: flex-start;
+        /* order: 2; */
+      }
+
+      .el--5 {
+        align-self: stretch;
+        order: 1;
+      }
+
+      .el--6 {
+        order: -1;
       }
     </style>
   </head>
