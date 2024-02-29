@@ -312,3 +312,23 @@ footer {
   margin-bottom: 5px;
   display: inline-block;
 }
+
+.row {
+  display: flex;
+  gap: 75px;
+  align-items: flex-start;
+}
+
+article {
+  /* flex: 0 0 825px; */
+  flex: 1;
+  /* this mean take the available space for it  */
+}
+
+aside {
+  /* Default  */
+  /* flex-grow: 1; */
+  /* flex-grow: 0; */
+  /* flex-basis: auto; */
+  flex: 0 0 300px;
+}
