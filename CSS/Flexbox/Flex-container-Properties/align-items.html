@@ -2,32 +2,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>justify-content</title>
+    <title>align-item</title>
     <style>
       .flex-container > div {
         background-color: #f1f1f1;
         padding: 20px;
         margin: 10px;
         font-size: 30px;
+        width: 100px;
+        text-align: center;
+        line-height: 75px;
       }
+
       .flex-container {
         background-color: dodgerblue;
         border: 2px solid black;
+        height: 400px;
         display: flex;
 
-        /* justify-content:  ; */
-        /* By default value is flex-start  */
-        /* justify-content: flex-start; */
-        /* justify-content: flex-end; */
-        /* justify-content: center; */
-        /* justify-content: space-around; */
-        /* justify-content: space-between; */
-        justify-content: space-evenly;
+        /* align-items: ; */
+        /* By default value is stretch  */
+        /* align-items: stretch; */
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+        align-items: center;
+        /* align-items: baseline; */
       }
     </style>
   </head>
   <body>
-    <h1>Create a Flex Container</h1>
+    <h1>Use for centering items on cross axis.</h1>
+
+    <h2>Create a Flex Container</h2>
     <div class="flex-container">
       <div>1</div>
       <div>2</div>
